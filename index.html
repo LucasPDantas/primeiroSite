@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Um quiz interativo para programadores">
-    <link rel="stylesheet" href="style.css">
-    <title>Quiz para Programadores</title>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar acentos e outros símbolos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante que a página será responsiva em dispositivos móveis -->
+    <meta name="description" content="Um quiz interativo para programadores">  <!-- Proporciona uma descrição para motores de busca -->
+    <link rel="stylesheet" href="style.css"> <!-- Vincula o arquivo CSS externo para estilização -->
+    <title>Quiz para Programadores</title> <!-- Define o título da página que aparece na aba do navegador -->
 </head>
 
-<body>
+<body>  <!-- Conteúdo principal do documento HTML -->
     <header>
         <h1>Quiz interativo para programadores</h1>
         <p>Teste seus conhecimentos em programação e veja qual pontuação consegue fazer!</p>
@@ -19,21 +19,21 @@
         <section>
             <h2>Sobre esse quiz</h2>
             <p><strong>Este quiz</strong> foi desenvolvido para testar seus conhecimentos em programação, como
-                <em>linguagens de programação</em>, conceitos básicos e mais.
+                <em>linguagens de programação</em>, conceitos básicos e mais.  <!-- Utilização de tags como <strong> e <em> para destacar textos -->
             </p>
             <p>Você encontrará diferentes tipos de perguntas, incluindo múltipla escolha, texto e perguntadas de data.
                 <br> Desafie-se com este quiz!
             </p>
             <p>Você poderá encontrar alguns acrônimos como <abbr title="HyperText Markup Language">HTML</abbr> e <abbr
                     title="Cascading Style Sheets">CSS</abbr>, que são comumente usados em questões relacionadas ao
-                desenvolvimento Web.</p>
+                desenvolvimento Web.</p>  <!-- Tag <abbr> mostra o significado completo de acrônimos ao passar o mouse -->
         </section>
         <!-- Perginta 1: Multipla escolha -->
         <section>
             <h2>Pergunta 1: Qual linguagem é usada para estruturar páginas Web?</h2>
             <form>
-                <input type="radio" value="Python" id="p1a" name="pergunta1">
-                <label for="p1a">Python</label><br>
+                <input type="radio" value="Python" id="p1a" name="pergunta1"> <!-- Uso de input type="radio" para criar perguntas de múltipla escolha -->
+                <label for="p1a">Python</label><br> <!-- Label vincula o texto ao campo usando o atributo "for" -->
                 <input type="radio" value="HTML" id="p1b" name="pergunta1">
                 <label for="p1b">HTML</label><br>
                 <input type="radio" value="JavaScript" id="p1c" name="pergunta1">
@@ -46,7 +46,7 @@
         <section>
             <h2>Pergunta 2: Na URL https://www.google.com o trecho "google.com" é o _____ .</h2>
             <form>
-                <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta...">
+                <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta..."> <!-- Placeholder oferece uma dica ao usuário -->
             </form>
         </section>
         <!-- Pergunta 3: Senha -->
@@ -160,19 +160,19 @@
         <section>
             <h2>Nos dê seu Feedback</h2>
             <form>
-                <fieldset>
-                <legend>Informações de contato</legend>
+                <fieldset> <!-- Agrupa elementos relacionados em um conjunto lógico -->
+                <legend>Informações de contato</legend> <!-- Oferece uma descrição para o conjunto -->
                     <label for="nume">Nome</label>
                     <input type="text" id="nome" name="nome"><br>
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email"><br>
                     <label for="comentarios">Comentários</label><br>
                     <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Digite seu comentário aqui..."></textarea><br>
-                    <button onclick="alert('FEEDBACK ENVIADO')">Envie o Feedback</button>
+                    <button onclick="alert('FEEDBACK ENVIADO')">Envie o Feedback</button> <!-- Botão envia o feedback e exibe uma mensagem de alerta -->
                 </fieldset>
         </section>
     </main>
-    <footer>
+    <footer> <!-- Rodapé da página -->
        <p class="paragrafo-footer">&copy; Quiz de programadores. Todos os direitos reservados</p> 
        <p class="paragrafo-footer">Para conhecer outros quizzes <a href="paginaDois.html" target="_blank">clique aqui</a></p>
     </footer>

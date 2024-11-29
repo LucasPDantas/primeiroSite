@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /* Importa a fonte "Roboto" do Google Fonts */
 
-:root {
+:root { /* Define variáveis de cores reutilizáveis */
     --Platinum: #e0e1dd;
     --Silver-Lake-Blue: #778DA9;
     --YInMn-Blue: #415A77;
@@ -8,27 +8,27 @@
     --Rich-black: #0D1B2A;
 }
 
-* {
+* { /* Remove margens e espaçamentos padrões e usa o modelo de caixa */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body { /* Aplica fonte padrão e cor para o texto */
     background-color: var(--Platinum);
     color: var(--YInMn-Blue);
     font-family: "Roboto", sans-serif;
     font-weight: 500;
 }
 
-header {
+header { /* Estiliza o cabeçalho com espaçamento, cor de fundo e alinhamento central */
     padding: 2rem;
     background-color: var(--YInMn-Blue);
     color: var(--Platinum);
     text-align: center;
 }
 
-main {
+main { /* Layout flexível com espaçamento entre seções */
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -36,22 +36,22 @@ main {
     font-size: 1.1rem;
 }
 
-section {
+section { /* Cada seção segue um layout vertical com espaçamento entre os elementos */
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-h2 {
+h2 { /* Cor e tamanho do texto dos subtítulos */
     color: var(--Rich-black);
     font-size: 1.5rem;
 }
 
-input[type="radio"], input[type="checkbox"] {
+input[type="radio"], input[type="checkbox"] { /* Cor personalizada para botões de rádio e checkboxes */
     accent-color: var(--YInMn-Blue);
 }
 
-input[type="text"], input[type="password"], input[type="date"], input[type="email"] {
+input[type="text"], input[type="password"], input[type="date"], input[type="email"] { /* Campos de entrada estilizados */
     width: 100%;
     padding: 0.6rem;
     border: 2px solid var(--YInMn-Blue);
@@ -134,7 +134,7 @@ legend {
     padding: 0 0.5rem;
 }
 
-textarea {
+textarea { /* Estilização para o campo de texto maior */
     background-color: transparent;
     border-radius: 5px;
     border: 2px solid var(--YInMn-Blue);
@@ -148,7 +148,7 @@ textarea::placeholder {
     font-size: 15px;
 }
 
-button {
+button { /* Botões estilizados com bordas arredondadas e cores personalizadas */
     border-radius: 5px;
     outline: none;
     border: 2px solid var(--YInMn-Blue);
@@ -164,7 +164,7 @@ textarea {
     margin-bottom: 0.5rem;
 }
 
-footer {
+footer { /* Rodapé com fundo e alinhamento centralizado */
     background-color: var(--YInMn-Blue);
     padding: 2rem;
     text-align: center;
